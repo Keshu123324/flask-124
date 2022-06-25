@@ -32,7 +32,7 @@ def add_contact():
               'Contact':request.json.get('Contact',""),
               'done':False
         }
-        contact.append(contact)
+        data.append(contact)
         return jsonify({
             "status":"sucess",
             "message":"contact added sucessfully"
